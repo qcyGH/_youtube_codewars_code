@@ -1,5 +1,5 @@
 function shortInterest(number, awesomePhrases) {
-  
+
     // A number is only interesting if it is greater than 99!
   if (number < 100) return 0
 
@@ -7,6 +7,7 @@ function shortInterest(number, awesomePhrases) {
   if(awesomePhrases.includes(number)) return 2
 
   number = number.toString()
+  
   // Any digit followed by all zeros
   let zeroNumbers = 0
   for (let symbol of number.slice(1)) {
