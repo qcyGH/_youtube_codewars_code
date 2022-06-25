@@ -2,10 +2,7 @@ const snail = (array) => {
   
   let result = []
   
-  let arrayLength = 0
-  arrayLength = array.reduce((total, part) => total + part.length, 0)
-  
-  for (let i = 0; i <= arrayLength; i++) {
+  while (array[0] !== undefined) {
     
     // right
     if (array[0] === undefined) break
